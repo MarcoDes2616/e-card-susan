@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Swiperm from "./components/Swiper";
+import qr from "./assets/img/qr-susan.png"
 
 function App() {
   const [count, setCount] = useState(0);
@@ -55,7 +56,7 @@ function App() {
         <div className="services_contain">
           <h3>Empresas que confirman mi experiencia...</h3>
           <Swiperm />
-          <div id="services" className="services">
+          {/* <div id="services" className="services">
             <div>
               <i className="bx bx-label bx-fade-right bx-sm"></i>
               <p>Asesoría legal</p>
@@ -88,17 +89,17 @@ function App() {
               <i className="bx bx-label bx-fade-right bx-sm"></i>
               <p>Polizas de seguro Nacional e Internacional</p>
             </div>
-          </div>
+          </div> */}
           <div className="scam_qr">
             <h3>Escanea y comparte mi QR...</h3>
             <div className="qr">
-              {/* <img  width="300" src="./QR-vanessa-nuñez.png" alt="" /> */}
+              <img  width="300" src={qr} alt="" />
             </div>
           </div>
         </div>
       </main>
       <footer>
-        <p>© 2023 Vanessa Nuñez Acosta. All rights reserved.</p>
+        <p>© 2023 Susan Vitores Posligua. All rights reserved.</p>
         <a target="_blank" href="tel:+593958863290">
           Created by: Marco Cardenas <br /> (Full-stack Developer)
         </a>
